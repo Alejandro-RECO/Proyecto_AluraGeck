@@ -15,7 +15,7 @@
 
 .container-main__banner-img{
     width: 100%;
-    height: 190px;
+    height: auto;
     display: block;
 }
 .container-main_info{
@@ -23,24 +23,30 @@
     height: 70%;
     box-sizing: border-box;
     width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 
 .container-main .container-main_info{
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 55%;
     transform: translate(-60%, -50%);
     text-align: start;
     color: #fff;
 }
 
 .container-main__title{
-    font-size: 2em;
+    font-size: 1.5em;
     margin-bottom: 0.5em;
 }
 
 .container-main__text{
+    font-size: .5em;
     margin-bottom: 1em;
+    display: none;
 }
 
 .container-main__botton{
@@ -48,15 +54,58 @@
     background-color: #333;
     color: var(--color2);
     background-color: var(--color4);
-    font-size: 1rem;
+    font-size: .7em;
     border: none;
     cursor: pointer;
+    height: 40px;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 650px) {
     .container-main__banner-img{
-        width: 100%;
-        height: 100%;
         display: block;
+    }
+    .container-main__text{
+        font-size: .5em;
+        margin-bottom: 1em;
+        display: block;
+    }
+    .container-main_info{
+        /* border: 1px solid red; */
+        height: 70%;
+        width: 80%;
+    }
+
+    .container-main .container-main_info{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    
+    .container-main__title{
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+    
+    .container-main__botton{
+        font-size: 1rem;
+    }
+    .container-main_info{
+        /* border: 1px solid red; */
+        height: 70%;
+        box-sizing: border-box;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .container-main__botton{
+        padding: 6px 20px;
+        background-color: #333;
+        color: var(--color2);
+        background-color: var(--color4);
+        font-size: 1rem;
+        border: none;
+        cursor: pointer;
+        height: 98%;
     }
 }
