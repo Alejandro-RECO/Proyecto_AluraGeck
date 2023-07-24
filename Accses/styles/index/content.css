@@ -90,3 +90,8 @@
     height: 40px;
     width: 150px;
 }
+.container-content__component-target a:hover{
+    color: var(--color2);
+    background-color: var(--color3);
+    transition: .3s;
+}

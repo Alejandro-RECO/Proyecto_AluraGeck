@@ -1,0 +1,50 @@
+:root {
+    --color1 : #b1caff;
+    --color2 : #feecff;
+    --color3 : #161934;
+    --color4 : #77767c;
+    --color5 : #e2e2e2;
+    --color6 : #afafaf7a;
+}
+
+
+.container-content__productos{
+    text-decoration: none;
+    height: 40px;
+    width: 150px;
+    background-color: var(--color3);
+    color: var(--color2);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--color3);
+}
+
+.container-content__productos:hover{
+    background-color: var(--color2);
+    color: var(--color3);
+    transition: .2s;
+}
+.prod{
+    margin-top: 10px
+}
+.fa{
+    color: var(--color3);
+    cursor: pointer;
+    font-size: 20px;
+
+}
+.fa-magic{
+    margin-right: 20px;
+}
+.fa-trash{
+    margin-left: 20px;
+}
+.fa:hover{
+    color: var(--color4);
+    transition:.1s;
+}
